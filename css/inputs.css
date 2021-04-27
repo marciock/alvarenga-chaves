@@ -6,3 +6,41 @@ input[type=number]::-webkit-outer-spin-button{
 input[type=number]{
     -moz-appearance: textfield;
 }
+
+#keyPrimary{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+@media screen and (min-width:320px) and (max-width:1280px) and (orientation:portrait) {
+
+    html{
+        transform: rotate(-90);
+        transform-origin: left top;
+        width: 120vh;
+        overflow-y: hidden;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    #colLine{
+        margin-left: -3em;
+    }
+    
+    
+}
+@media screen and (min-width:320px) and (max-width:1280px) and (orientation:landscape) {
+
+    html{
+      
+        transform-origin: left top;
+        width: 150vw;
+        overflow-y: hidden;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    
+    
+}
+
