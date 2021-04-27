@@ -18,9 +18,15 @@ export class InputPoint extends HTMLElement{
        }      
         
 
-        this.addEventListener('dblclick',()=>{
+        /*this.addEventListener('dblclick',()=>{
             input.readOnly=false;
-        });
+        });*/
+        this.addEventListener('click',()=>{
+            input.readOnly=false;
+        })
+        this.addEventListener('touchend',()=>{
+            input.readOnly=false;
+        })
         this.addEventListener('focusout',()=>{
             input.readOnly=true;
         });
