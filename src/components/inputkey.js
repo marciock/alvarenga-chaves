@@ -6,7 +6,7 @@ export class InputKey extends HTMLElement{
     connectedCallback(){
         const input=document.createElement('input');
         //input.style='width:4em;height:auto';
-        input.classList.add('form-control');
+        input.classList.add('form-control','border-info');
         //input.setAttribute('maxlength','3');
        
         input.readOnly=true;
