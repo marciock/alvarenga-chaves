@@ -7,16 +7,10 @@ input[type=number]{
     -moz-appearance: textfield;
 }
 
-#keyPrimary{
-    position: relative;
-    top: 42%;
-    transform: translateY(-45%); 
-    transform: translateX(-100%); 
-    margin-left:-22em;
-}
+
 @media screen and (min-width:320px) and (max-width:780px) and (orientation:portrait) {
 
-    html{
+    #chaves{
         transform: rotate(-90);
         transform-origin: left top;
         width: 200vh;
@@ -25,96 +19,62 @@ input[type=number]{
         top:0;
         left:0;
     }
-    #colLine{
-        margin-left: -10em;
-    }
-    #keyPrimary{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%); 
-        transform: translateX(-40%); 
-        margin-left: -38em;
-       
-    }
+    
     
     
 }
+
 @media screen and (min-width:320px) and (max-width:780px) and (orientation:landscape) {
 
-    html{
-       
+    #chaves{
+        
         transform-origin: left top;
-        width: 500vw;
+        transform: scale(0.5);
+        width: 250vw;
         overflow-y: hidden;
-        position: absolute;
+        position: relative;
         top:0;
         left:0;
-    }
-    #colLine{
-        margin-left: -1em;
-    }
-    #keyPrimary{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%); 
-        transform: translateX(-35%); 
         
-       
     }
-    
-    
+ 
 }
+@media screen and (min-width:790px) and (max-width:1200px) and (orientation:portrait) {
 
-@media screen and (min-width:790px) and (max-width:1280px) and (orientation:portrait) {
-
-    html{
+    #chaves{
         transform: rotate(-90);
         transform-origin: left top;
-        width: 200vh;
+        transform: scale(0.5);
+        width: 250vh;
         overflow-y: hidden;
         position: absolute;
         top:0;
         left:0;
     }
-    #keyPrimary{
-        position: absolute;
-        top: 48%;
-        transform: translateY(-50%); 
-        transform: translateX(-10%); 
-        
-        
-       
-    }
-    #colLine{
-        margin-left: -3em;
-    }
+    
     
     
 }
-@media screen and (min-width:790px) and (max-width:1280px) and (orientation:landscape) {
+@media screen and (min-width:790px) and (max-width:1200px) and (orientation:landscape) {
 
-    html{
-        transform: rotate(-90);
+    #chaves{
+        
         transform-origin: left top;
-        width: 200vw;
+        transform: scale(0.3);
+        width: 300vw;
         overflow-y: hidden;
         position: absolute;
         top:0;
         left:0;
     }
-    #keyPrimary{
-        position: absolute;
-        top: 48%;
-        transform: translateY(-50%); 
-        transform: translateX(-10%); 
-        margin-left: -42em;
-        
-       
-    }
-    #colLine{
-        margin-left: -1em;
-    }
+    
     
     
 }
+
+
+    
+    
+    
+
 
